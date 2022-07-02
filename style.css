@@ -64,6 +64,7 @@ body {
     background-color: var(--dark);
     background-image: linear-gradient(to bottom left, var(--dark), var(--dark), var(--dark), var(--gold));
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 footer {
