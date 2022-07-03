@@ -31,13 +31,30 @@
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.horizontal-list a {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    list-style: none;
+    text-decoration: none;
+    color: var(--yellow-dark);
+}
+
+.flex-container {
+    display: flex;
+}
+
 .container {
     padding: 5%;
     display: flex;
     flex-direction: row;
     gap: 12rem;
 }
-
 
 
 .about-me {
@@ -91,6 +108,7 @@ footer {
 ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-right: 40px;
     list-style-type: none;
@@ -99,7 +117,7 @@ ul {
 @media only screen and (max-width: 420px) {
     ul {
         align-items: center;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .profile-picture {
         margin-left: auto;
@@ -114,6 +132,9 @@ ul {
         flex-direction: column;
         gap: 2rem;
     }
+}
+.top-links {
+    flex-wrap: wrap;
 }
 .top-links > li {
     text-transform: capitalize;
